@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		FA07E128273551460055E0E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E127273551460055E0E5 /* AppDelegate.swift */; };
 		FA07E12A273551460055E0E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E129273551460055E0E5 /* SceneDelegate.swift */; };
-		FA07E12C273551460055E0E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E12B273551460055E0E5 /* ViewController.swift */; };
+		FA07E12C273551460055E0E5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E12B273551460055E0E5 /* SettingsViewController.swift */; };
 		FA07E12F273551460055E0E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA07E12D273551460055E0E5 /* Main.storyboard */; };
 		FA07E131273551470055E0E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA07E130273551470055E0E5 /* Assets.xcassets */; };
 		FA07E134273551470055E0E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA07E132273551470055E0E5 /* LaunchScreen.storyboard */; };
+		FA07E13C27355EAB0055E0E5 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA07E13B27355EAB0055E0E5 /* HomeScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA07E124273551460055E0E5 /* HW_2.6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW_2.6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA07E127273551460055E0E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA07E129273551460055E0E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA07E12B273551460055E0E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA07E12B273551460055E0E5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FA07E12E273551460055E0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA07E130273551470055E0E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA07E133273551470055E0E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA07E135273551470055E0E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA07E13B27355EAB0055E0E5 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				FA07E127273551460055E0E5 /* AppDelegate.swift */,
 				FA07E129273551460055E0E5 /* SceneDelegate.swift */,
-				FA07E12B273551460055E0E5 /* ViewController.swift */,
+				FA07E12B273551460055E0E5 /* SettingsViewController.swift */,
 				FA07E12D273551460055E0E5 /* Main.storyboard */,
+				FA07E13B27355EAB0055E0E5 /* HomeScreenViewController.swift */,
 				FA07E130273551470055E0E5 /* Assets.xcassets */,
 				FA07E132273551470055E0E5 /* LaunchScreen.storyboard */,
 				FA07E135273551470055E0E5 /* Info.plist */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA07E12C273551460055E0E5 /* ViewController.swift in Sources */,
+				FA07E12C273551460055E0E5 /* SettingsViewController.swift in Sources */,
+				FA07E13C27355EAB0055E0E5 /* HomeScreenViewController.swift in Sources */,
 				FA07E128273551460055E0E5 /* AppDelegate.swift in Sources */,
 				FA07E12A273551460055E0E5 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

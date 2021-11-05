@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  HW_2.6
+//  HW2.2
 //
-//  Created by Егор Кромин on 05.11.2021.
+//  Created by Егор Кромин on 22.10.2021.
 //
 
 import UIKit
