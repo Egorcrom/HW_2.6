@@ -1,11 +1,12 @@
 //
-//  ViewController.swift
-//  HW2.2
+//  SettingsViewController.swift
+//  HW_2.6
 //
-//  Created by Егор Кромин on 22.10.2021.
+//  Created by Егор Кромин on 05.11.2021.
 //
 
 import UIKit
+
 
 class SettingsViewController: UIViewController {
     @IBOutlet var redSliderOutlet: UISlider!
@@ -22,11 +23,12 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet var coloredView: UIView!
     
+    var delegate: SettingsViewControllerDelegate!
     var colors = (CGFloat(0), CGFloat(0), CGFloat(0))
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
         coloredView.layer.cornerRadius = 10
         coloredView.layer.borderWidth = 1
         coloredView.layer.borderColor = UIColor.black.cgColor
@@ -38,6 +40,7 @@ class SettingsViewController: UIViewController {
         redSliderOutlet.setValue(Float(colors.0), animated: false)
         greenSliderOutlet.setValue(Float(colors.1), animated: false)
         blueSliderOutlet.setValue(Float(colors.2), animated: false)
+        
         sliderValueChanged()
         sliderAction()
     }
@@ -66,10 +69,8 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func doneButtonPressed() {
-        
+        delegate.sendColors(for: CGFloat(redSliderOutlet.value), and: CGFloat(greenSliderOutlet.value), and: CGFloat(blueSliderOutlet.value))
     }
-    
-
 }
 extension SettingsViewController {
    @objc func endEditing() {
@@ -83,11 +84,10 @@ extension SettingsViewController {
     func addDoneButton() -> UIToolbar {
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        
         let space = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.done, target: self, action: #selector(endEditing))
-        
         toolBar.setItems([space, doneButton], animated: false)
        return toolBar
     }
 }
+
